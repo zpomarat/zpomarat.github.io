@@ -7,7 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a postdoctoral researcher at [LAAS-CNRS](https://www.laas.fr/en/), Toulouse, in the [Gepetto](https://www.laas.fr/en/teams/gepetto/) team. My research focuses on sports biomechanics and applied machine learning, with an emphasis on force estimation and instrumentation in elite sport contexts. I work at the intersection of experimental biomechanics, sensor design, and data-driven methods, developing custom ML models tailored to the specific constraints of real-world sport environments. I mainly work with Prof. [Bruno Watier](https://www.laas.fr/) and Prof. [Jean-Charles Passieux](https://www.laas.fr/).
+I am currently a postdoctoral researcher at [LAAS-CNRS](https://www.laas.fr/en/), Toulouse, in the [Gepetto](https://www.laas.fr/en/teams/gepetto/) team. My research focuses on sports biomechanics and applied machine learning, with an emphasis on force estimation and instrumentation in elite sport contexts. I work at the intersection of experimental biomechanics, sensor design, and data-driven methods, developing custom ML models tailored to the specific constraints of real-world sport environments. 
+
+<!-- I mainly work with Prof. [Bruno Watier](https://www.laas.fr/) and Prof. [Jean-Charles Passieux](https://www.laas.fr/). -->
 
 During my PhD, I focused on rugby scrum instrumentation and individual force estimation using instrumented insoles and machine learning, in collaboration with [Stade Toulousain](https://www.stadetoulousain.fr/) and [Institut Clément Ader](https://institut-clement-ader.org/), supervised by Prof. Bruno Watier, Prof. Jean-Charles Passieux, and Asst. Prof. John-Eric Dufour.
 
