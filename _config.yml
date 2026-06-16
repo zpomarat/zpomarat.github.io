@@ -12,8 +12,8 @@ site_theme               : "default"
 title                    : "Zoé Pomarat"
 title_separator          : "-"
 name                     : &name "Zoé Pomarat"
-description              : &description "personal description"
-url                      : # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+description              : &description "PhD in Biomechanics, Sports Performance, AI"
+url                      : "https://zpomarat.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 # repository               : #
 
@@ -45,7 +45,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : # Username
+  github           : "zpomarat"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -97,7 +97,7 @@ atom_feed:
 
 
 # SEO Related
-google_site_verification :
+google_site_verification : "d8JM_UclGhb7u1dSv2rhT9EuOZtutdUH_DenFDnxRLQ"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
