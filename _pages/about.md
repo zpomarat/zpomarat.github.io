@@ -32,7 +32,8 @@ I graduated from [INSA Toulouse](https://www.insa-toulouse.fr/en/), where I spec
 
 ## In the media
 
-- *[Mechanical engineering in the service of sport](https://www.insa-toulouse.fr/zoe_pomarat/)* — portrait by INSA Toulouse.
+- *[Mechanical engineering in the service of sport](https://www.insa-toulouse.fr/zoe_pomarat/)*: portrait by **INSA Toulouse**.
+- *[Instrumenting the rugby scrum: measurement campaign with 12 players](https://www.linkedin.com/feed/update/urn:li:activity:7300857508007469056/)*: **Centre d'Appui et d'Analyse de la Performance Sportive** (CREPS Toulouse) on LinkedIn, February 2025.
 
 <!-- Add your LinkedIn posts and other press coverage below, following the same pattern:
 - *[Title of the article](URL)* — one short line of context. **Outlet name**, Month Year.
