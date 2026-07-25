@@ -5,23 +5,38 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+
+# Highlight block for the PhD page, displayed further down by {% include feature_row %}.
+# Replace "500x300.png" by your own picture: drop the file in the images/ folder
+# and write its file name here (no path needed, e.g. "scrum.jpg").
+phd_highlight:
+  - image_path: 500x300.png
+    alt: "Instrumented rugby scrum"
+    title: "PhD — Measuring the invisible in a rugby scrum"
+    excerpt: "Three years of instrumentation, experiments with elite players and machine learning to estimate the force produced by each individual player during scrummaging."
+    url: "/phd/"
+    btn_label: "Read the story"
+    btn_class: "btn--primary"
 ---
 
 I am currently a postdoctoral researcher at [LAAS-CNRS](https://www.laas.fr/en/), Toulouse, in the [Gepetto](https://www.laas.fr/en/teams/gepetto/) team. My research focuses on sports biomechanics and applied machine learning, with an emphasis on force estimation and instrumentation in elite sport contexts. I work at the intersection of experimental biomechanics, sensor design, and data-driven methods, developing custom ML models tailored to the specific constraints of real-world sport environments. 
 
 <!-- I mainly work with Prof. [Bruno Watier](https://www.laas.fr/) and Prof. [Jean-Charles Passieux](https://www.laas.fr/). -->
 
-During my PhD, I focused on rugby scrum instrumentation and individual force estimation using instrumented insoles and machine learning, in collaboration with [Stade Toulousain](https://www.stadetoulousain.fr/) and [Institut Clément Ader](https://institut-clement-ader.org/), supervised by Prof. Bruno Watier, Prof. Jean-Charles Passieux, and Asst. Prof. John-Eric Dufour.
+During my PhD, I focused on rugby scrum instrumentation and individual force estimation using instrumented insoles and machine learning, in collaboration with [Stade Toulousain](https://www.stadetoulousain.fr/), [LAAS-CNRS](https://www.laas.fr/en/) and [Institut Clément Ader](https://institut-clement-ader.org/), supervised by Prof. Bruno Watier, Prof. Jean-Charles Passieux, and Asst. Prof. John-Eric Dufour.
 
 I graduated from [INSA Toulouse](https://www.insa-toulouse.fr/en/), where I specialised in mechanical engineering and biomechanics.
 
-<!-- ## News
-- **[11/2025]** Moving to Prague, Czech Republic, to start a postdoc in CIIRC CTU. 
-- **[10/2025]** Successfully defending my PhD!  
-- **[05/2025]** Presenting the paper Collision Avoidance in Model Predictive Control using Velocity Damper in ICRA 2025, Atlanta, USA.
-- **[12/2024]** [Coding Week](https://www.agimus-project.eu/news-events/news/51-successful-coding-week-at-ciirc-ctu-marks-key-milestone-for-agimus-project) at [CIIRC-CTU](https://www.ciirc.cvut.cz/), Prague for the AGIMUS Project.
-- **[06/2024]** Presenting the paper Model Predictive Control under Hard Collision Avoidance Constraints for a Robotic Arm in UR 2024, New York, USA.
-- **[06/2024]** 2 months Invited Scholar in the [Machines in Motion](https://www.machinesinmotion.org/) team in [New York University](https://www.nyu.edu/) -->
+
+{% include feature_row id="phd_highlight" type="left" %}
+
+## In the media
+
+- *[Mechanical engineering in the service of sport](https://www.insa-toulouse.fr/zoe_pomarat/)* — portrait by INSA Toulouse.
+
+<!-- Add your LinkedIn posts and other press coverage below, following the same pattern:
+- *[Title of the article](URL)* — one short line of context. **Outlet name**, Month Year.
+-->
 
 ## Publications
 

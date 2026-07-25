@@ -1,0 +1,8 @@
+# Ruby dependencies installed locally by `bundle install`
+vendor/
+.bundle/
+
+# Jekyll build caches
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
