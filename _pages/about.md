@@ -10,7 +10,7 @@ redirect_from:
 # Replace "500x300.png" by your own picture: drop the file in the images/ folder
 # and write its file name here (no path needed, e.g. "scrum.jpg").
 phd_highlight:
-  - image_path: 500x300.png
+  - image_path: "phd.jpg"
     alt: "Instrumented rugby scrum"
     title: "PhD — Measuring the invisible in a rugby scrum"
     excerpt: "Three years of instrumentation, experiments with elite players and machine learning to estimate the force produced by each individual player during scrummaging."
@@ -23,7 +23,7 @@ I am currently a postdoctoral researcher at [LAAS-CNRS](https://www.laas.fr/en/)
 
 <!-- I mainly work with Prof. [Bruno Watier](https://www.laas.fr/) and Prof. [Jean-Charles Passieux](https://www.laas.fr/). -->
 
-During my PhD, I focused on rugby scrum instrumentation and individual force estimation using instrumented insoles and machine learning, in collaboration with [Stade Toulousain](https://www.stadetoulousain.fr/), [LAAS-CNRS](https://www.laas.fr/en/) and [Institut Clément Ader](https://institut-clement-ader.org/), supervised by Prof. Bruno Watier, Prof. Jean-Charles Passieux, and Asst. Prof. John-Eric Dufour.
+During my PhD, I focused on rugby scrum instrumentation and individual force estimation using instrumented insoles and machine learning, in collaboration with [Stade Toulousain](https://www.stadetoulousain.fr/), [LAAS-CNRS](https://www.laas.fr/en/) and [Institut Clément Ader](https://ica.cnrs.fr/), supervised by Prof. Bruno Watier, Prof. Jean-Charles Passieux, and Asst. Prof. John-Eric Dufour.
 
 I graduated from [INSA Toulouse](https://www.insa-toulouse.fr/en/), where I specialised in mechanical engineering and biomechanics.
 

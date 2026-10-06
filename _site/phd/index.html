@@ -19,7 +19,7 @@
 
 
 
-<title>Measuring the invisible: how much force does a single player produce in a rugby scrum? - Zoé Pomarat</title>
+<title>Measuring the invisible: how much force does each player produce in a rugby scrum? - Zoé Pomarat</title>
 
 
 
@@ -29,7 +29,7 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="Zoé Pomarat">
-<meta property="og:title" content="Measuring the invisible: how much force does a single player produce in a rugby scrum?">
+<meta property="og:title" content="Measuring the invisible: how much force does each player produce in a rugby scrum?">
 
 
   <link rel="canonical" href="http://localhost:4000/phd/">
@@ -159,7 +159,7 @@
   <div class="author__content">
     <h3 class="author__name">Zoé Pomarat</h3>
     
-    <p class="author__bio">Postdoctoral researcher - LAAS-CNRS</p>
+    <p class="author__bio">Research Engineer</p>
   </div>
 
   <div class="author__urls-wrapper">
@@ -167,10 +167,6 @@
     <ul class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       
-        <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>Toulouse, France</li>
-      
-      
-        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>LAAS-CNRS</li>
       
       
       
@@ -233,7 +229,7 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Measuring the invisible: how much force does a single player produce in a rugby scrum?">
+    <meta itemprop="headline" content="Measuring the invisible: how much force does each player produce in a rugby scrum?">
     <meta itemprop="description" content="Three years of PhD research with Stade Toulousain: instrumenting elite rugby players with instrumented insoles and building machine learning models to estimate individual ground reaction forces during scrummaging.">
     
     
@@ -241,14 +237,14 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Measuring the invisible: how much force does a single player produce in a rugby scrum?
+          <h1 class="page__title" itemprop="headline">Measuring the invisible: how much force does each player produce in a rugby scrum?
 </h1>
           
             <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> 
 
 
   
-	  less than 1 minute read
+	  18 minute read
 	
 </p>
           
@@ -283,135 +279,196 @@ Useful snippets:
 <aside class="sidebar__right">
 <nav class="toc">
     <header><h4 class="nav__title"><i class="fa fa-book"></i> Contents</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#the-context-a-collaboration-with-stade-toulousain" id="markdown-toc-the-context-a-collaboration-with-stade-toulousain">The context: a collaboration with Stade Toulousain</a></li>
+  <li><a href="#choosing-the-right-measurement-solution" id="markdown-toc-choosing-the-right-measurement-solution">Choosing the right measurement solution</a></li>
+  <li><a href="#when-insoles-arent-enough-introducing-machine-learning" id="markdown-toc-when-insoles-arent-enough-introducing-machine-learning">When insoles aren’t enough: introducing machine learning</a></li>
+  <li><a href="#validating-the-system-and-finding-the-best-model" id="markdown-toc-validating-the-system-and-finding-the-best-model">Validating the system and finding the best model</a>    <ul>
+      <li><a href="#step-1-a-proof-of-concept" id="markdown-toc-step-1-a-proof-of-concept">Step 1: a proof of concept</a></li>
+      <li><a href="#step-2-elite-players-and-a-systematic-comparison" id="markdown-toc-step-2-elite-players-and-a-systematic-comparison">Step 2: elite players and a systematic comparison</a></li>
+      <li><a href="#results-two-operational-models" id="markdown-toc-results-two-operational-models">Results: two operational models</a></li>
+    </ul>
+  </li>
+  <li><a href="#back-to-the-coaches-question-who-pushes-the-most" id="markdown-toc-back-to-the-coaches-question-who-pushes-the-most">Back to the coaches’ question: who pushes the most?</a>    <ul>
+      <li><a href="#three-levels-of-analysis" id="markdown-toc-three-levels-of-analysis">Three levels of analysis</a></li>
+      <li><a href="#what-the-coaches-can-do-with-it" id="markdown-toc-what-the-coaches-can-do-with-it">What the coaches can do with it</a></li>
+    </ul>
+  </li>
+  <li><a href="#whats-next" id="markdown-toc-whats-next">What’s next?</a></li>
+  <li><a href="#publications-and-communications" id="markdown-toc-publications-and-communications">Publications and communications</a>    <ul>
+      <li><a href="#peer-reviewed-articles" id="markdown-toc-peer-reviewed-articles">Peer-reviewed articles</a></li>
+      <li><a href="#international-conferences" id="markdown-toc-international-conferences">International conferences</a></li>
+    </ul>
+  </li>
+  <li><a href="#acknowledgements" id="markdown-toc-acknowledgements">Acknowledgements</a></li>
+</ul>
 
   </nav>
 </aside>
 
-<!--
+<p class="notice--info phd-summary"><strong>PhD in biomechanics and machine learning (2023–2026)</strong> — <strong><a href="https://www.laas.fr/en/">LAAS-CNRS</a></strong> &amp; <strong><a href="https://ica.cnrs.fr/">Institut Clément Ader</a></strong>, in partnership with <strong><a href="https://www.stadetoulousain.fr/">Stade Toulousain</a></strong>, one of the most successful rugby clubs in France and Europe.<br />
+<strong>In short:</strong> The scrum is a critical phase of rugby union. Its outcome is closely associated with overall match performance, and it carries a high risk of serious injury. Scrum success depends largely on the forward horizontal force generated by the pack as a whole, yet research suggests that synergy, stability and technique matter more than the force capacity of any single player. Understanding scrum performance therefore requires knowing what each player contributes within the collective effort.
+No existing method provided individual three-dimensional force measurements during real scrums. Previous studies measured either collective forces against scrum machines, far from match conditions, or individual forces outside the scrum. During my PhD, I developed and validated an <strong>embedded instrumentation</strong> system that fills this gap, <strong>estimating the 3D pushing forces of all eight players of a pack simultaneously</strong>.
+The system relies on instrumented insoles, which are well suited to field conditions but only measure forces perpendicular to their surface and overestimate them when strongly flexed inside the shoe, as happens when scrummaging. To overcome these limitations, I trained machine learning models to correct the sensor bias and reconstruct all three components of the ground reaction force. After comparing several architectures (MLP, LSTM, Random Forest) and training strategies, the best model achieved <strong>errors below 8.5% of body weight on every axis</strong>, including during critical phases such as foot repositioning.
+Two operational models, one generic and one personalised, were delivered to Stade Toulousain and deployed over three on-field sessions with elite players. They made it possible to analyse pushing forces at the collective, individual and intra-individual levels, opening new perspectives for performance monitoring and injury prevention in professional rugby.</p>
 
-**PhD in biomechanics (2022–2025)** — Institut Clément Ader & LAAS-CNRS, in partnership with **[Stade Toulousain](https://www.stadetoulousain.fr/)**, one of the most successful rugby clubs in France and Europe.<br>
-**In short:** I built a measurement chain — wearable sensors, experimental protocols and machine learning models — that estimates the three-dimensional force produced by *each individual player* during a rugby scrum, in real conditions rather than in a laboratory.
-{: .notice--info}
+<h2 id="the-context-a-collaboration-with-stade-toulousain">The context: a collaboration with Stade Toulousain</h2>
 
-## The context: a black box at the heart of rugby
+<p>This thesis was an industrial PhD (CIFRE), conducted at <a href="https://www.laas.fr/en/">LAAS-CNRS</a> and <a href="https://ica.cnrs.fr/">Institut Clément Ader</a> in partnership with <a href="https://www.stadetoulousain.fr/">Stade Toulousain</a>.</p>
 
-A scrum puts sixteen players in direct contact, eight against eight, in one of the most physically demanding phases of any team sport. It decides possession, territory and, quite often, matches. It is also one of the main injury mechanisms for front-row players.
+<p>The project started with a concrete request from the club’s coaches. They wanted a tool to measure the pushing effort of each player individually and simultaneously, during scrums against another pack. Their goal was to better understand how the effort is distributed within the pack: who pushes the most, how each player contributes to the collective force, and how this changes from one scrum to another.</p>
 
-Yet the coaching staff of a professional club has almost no objective data on it. Instrumented scrum machines measure the **total** force of a pack against the machine — a single resultant, for eight players at once. Nothing tells a coach whether a given player is pushing hard, pushing in the right direction, or quietly being carried by his teammates.
+<p>To meet this need, the measurement system had to satisfy several requirements, arising both from the nature of the scrum itself and from the context of elite sport:</p>
 
-That is the gap I worked on: **going from one global force to eight individual forces.**
+<ul>
+  <li><strong>Usable on-field, independently of the environment</strong>: it had to work on a real training pitch, whatever the weather or ground conditions, not only in a laboratory.</li>
+  <li><strong>Individual force measurements within the scrum</strong>: each player’s contribution had to be isolated, for all eight players of the pack at the same time.</li>
+  <li><strong>No interference with the player’s movement, comfort and natural technique</strong>: otherwise, the measured scrum would no longer reflect a real one.</li>
+  <li><strong>Safe and unobtrusive</strong>: the equipment could not create any additional risk in a phase already associated with serious injuries.</li>
+  <li><strong>High sampling rate</strong>: scrum engagement and foot repositioning happen within fractions of a second, and the system had to capture these fast variations.</li>
+  <li><strong>Easy to deploy and operate</strong>: sessions with professional players are short, and the setup had to be quick and reliable.</li>
+  <li><strong>Cost-effective</strong>: the system had to equip a full pack, and potentially be reused routinely by the club.</li>
+</ul>
 
-### Why Stade Toulousain
+<h2 id="choosing-the-right-measurement-solution">Choosing the right measurement solution</h2>
 
-The project was run in direct collaboration with Stade Toulousain, a club with a professional performance department and international-level front-row players. This shaped the entire thesis, in ways that turned out to be as much of a scientific constraint as an opportunity:
+<p>Estimating individual pushing forces during a scrum is not just a matter of buying the right sensor: no existing device provides this measurement directly. Several options were considered, each assessed against the requirements described above.</p>
 
-- The measurements had to be made on **elite athletes in their real training environment**, not on students in a laboratory. The biomechanics of a professional prop has little to do with that of a volunteer.
-- Data collection had to fit inside **the club's schedule**, not the other way around: short sessions, no interference with training load, equipment that must work the first time.
-- The output had to be **usable by a performance staff**, not only publishable — which forced me to think about interpretability and deployment from the start.
+<p><strong>Force platforms.</strong> They are the reference method in biomechanics, measuring ground reaction forces in three dimensions with excellent accuracy. But they are expensive, fixed in the ground and cover a limited area, requiring each foot to stay on a specific plate. They cannot be taken onto a training pitch, nor follow the constant foot movements of eight players in a live scrum.</p>
 
-**[to complete: add 2–3 concrete facts here — number of players involved, number of sessions, over how many seasons, whether the staff used the results in practice. This is exactly the kind of detail a recruiter reads as evidence of real-world impact.]**
+<p><strong>Instrumented scrum machines.</strong> Robust and already used by many clubs for training, they measure the total force applied by the pack to the machine, or by a single player when using an individual scrum machine. Each player’s contribution within the pack remains inaccessible, and a machine does not fully reproduce the behaviour of an opposing pack.</p>
 
-## Which measurement solutions were on the table
+<p><strong>Sensors on contact surfaces</strong>, such as pressure pads placed on the shoulders. They directly measure contact forces between players, but in one direction only. They do not fully cover the contact surfaces between opposing players and tend to underestimate the forces generated during scrummaging.</p>
 
-Estimating individual force during scrummaging is not a matter of buying the right sensor: no sensor gives that measurement directly. I reviewed and tested several routes, each with a fundamental limitation.
+<p><strong>Instrumented insoles.</strong> Placed directly inside the shoes, they measure the force between the foot and the insole, which closely reflects the force each player applies to the ground. They are wearable, do not interfere with the players’ technique, can be worn by all eight players at once, and work on any pitch, in real scrums against a real opposing pack.</p>
 
-**Force platforms.** The reference method in biomechanics: they measure ground reaction forces in three dimensions with excellent accuracy. But they are fixed in the ground, cover a limited area, and require each foot to land on a specific plate. They cannot be taken to a training pitch, and they cannot instrument eight players simultaneously in a real scrum.
+<p>No solution met every requirement perfectly. But instrumented insoles offered by far the best compromise, and were the only option allowing each player to be measured individually, in real scrummaging conditions. They were therefore chosen as the basis of the system.</p>
 
-**Instrumented scrum machines.** Robust, ecological, already used by clubs — but they only give the resultant force applied to the machine. The individual contribution of each player remains inaccessible, and a machine is not an opposing pack.
+<h2 id="when-insoles-arent-enough-introducing-machine-learning">When insoles aren’t enough: introducing machine learning</h2>
 
-**Sensors on the contact surfaces** (shoulder pads, instrumented shirts). They measure what happens at the point of contact between players, but not what the player produces against the ground, which is the actual source of the pushing force. They are also intrusive and highly sensitive to positioning.
+<p>Instrumented insoles solved the practical problem: they can be worn by every player, in real scrums. But two limitations prevented them from directly providing the individual 3D pushing forces the club was looking for.</p>
 
-**Instrumented insoles.** Wearable, non-intrusive, worn by every player at once, usable anywhere — including in a real scrum against a real opposing pack. This is the only option compatible with the ecological validity the project required.
+<p><strong>They only measure the force in one direction.</strong> Insole sensors measure the force perpendicular to the insole surface. During walking, for example, where the foot remains relatively flat on the ground, this roughly corresponds to the vertical force. In a scrum, however, players lean forward, with their feet constantly changing orientation. The direction measured by the insole therefore keeps changing, and the horizontal component, the one that actually drives the pack forward, is never measured directly.</p>
 
-**The solution adopted in the thesis: instrumented insoles**, because they are the only technology that lets you instrument every player individually, in situ, without changing the way they scrummage.
+<p><strong>They overestimate forces when the foot is strongly flexed.</strong> In a scrum, players push mostly through the front of the foot, with the insole heavily bent inside the shoe. Under these conditions, the sensors tend to overestimate the applied force.</p>
 
-**[to complete: name the insole system you used and its key specifications — number of sensors, sampling frequency. Recruiters in sports tech and instrumentation will look for this.]**
+<p>Insoles alone were therefore not enough. The problem became: <strong>how do you recover an accurate three-dimensional force from a sensor that only sees one dimension, and not always reliably?</strong></p>
 
-## The catch — and why machine learning became necessary
+<p>The answer was a model. The way a player loads the different areas of the foot, and how this loading evolves over time, carries information about the force applied in all three directions. Combined with data from inertial measurement units (IMUs), which capture the orientation and movements of the foot, these signals offer a much richer picture than the insole force alone. The relationship between these inputs and the 3D force is far too complex to describe with equations, but it can be <strong>learned from data</strong>, using machine learning.</p>
 
-Instrumented insoles come with a serious limitation, and confronting it is the scientific core of the thesis.
+<p>This approach is not new in itself: machine learning has already been used to correct and complete insole force measurements during movements dominated by vertical forces, such as walking and running. But it had never been validated for scrummaging, where conditions are very different: large horizontal forces, sustained high loads, strongly flexed feet and constant foot repositioning. The core of this thesis was therefore to adapt this approach to the scrum and to validate it under these demanding conditions.</p>
 
-Insoles measure **plantar pressure**: a distribution of normal pressures under the foot. From this, one can reasonably reconstruct the **vertical** component of the ground reaction force. But in a scrum, the performance-relevant variable is the **horizontal** component — the anteroposterior force with which a player pushes forward. That is precisely the component insoles cannot measure. Add to this sensor drift, calibration sensitivity and the deformation of the insole inside a boot under extreme load.
+<h2 id="validating-the-system-and-finding-the-best-model">Validating the system and finding the best model</h2>
 
-So the problem became: **how do you recover a three-dimensional force from a sensor that only sees one dimension?**
+<p>The approach relied on a simple principle:</p>
 
-The answer is not a better sensor, it is a model. The pressure pattern under a foot is not independent of the force being applied in the other two directions: how a player loads the front of the foot, how the centre of pressure shifts, how the load distributes between both feet — all of it carries information about the horizontal push. That relationship is far too complex to write down analytically, but it can be **learned from data**.
+<ol>
+  <li>Record, in controlled conditions, <strong>synchronised data</strong> from instrumented insoles <em>and</em> force platforms: the insoles provide the input, the platforms provide the ground truth.</li>
+  <li>Train machine learning models to estimate the full 3D ground reaction force from insole and IMU signals.</li>
+  <li>Deploy the trained models <strong>on the pitch</strong>, where force platforms cannot go, using the instrumented insoles and IMUs alone.</li>
+</ol>
 
-The strategy:
+<h3 id="step-1-a-proof-of-concept">Step 1: a proof of concept</h3>
 
-1. Record, in controlled conditions, **synchronised data** from instrumented insoles *and* force platforms — the insoles provide the input, the platforms provide the ground truth.
-2. Train machine learning models to map insole signals onto the full 3D ground reaction force.
-3. Deploy the trained models **on the pitch**, where no force platform can ever go.
+<p>Before involving the club’s players, the approach was first tested on 13 recreationally active participants with no scrummaging experience. This was a deliberate choice: the goal at this stage was to assess the robustness of the measurement and modelling framework, without drawing on the limited availability of elite players.</p>
 
-The force platforms are not the measurement system: they are the teacher. Once the model is trained, they are no longer needed.
-{: .notice--info}
+<p>Each participant pushed against an individual scrum machine, with each foot on a force platform covered with artificial turf, while wearing Loadsol Pro instrumented insoles. These insoles provide the normal force on three areas of the foot (heel, medial and lateral), along with 3D acceleration and angular velocity from an embedded IMU, all recorded at 200 Hz. In total, 50 pushes of 30 to 40 seconds were collected.</p>
 
-## The machine learning work
+<p>Turning these recordings into a usable dataset required a complete signal processing pipeline: synchronising insoles and force platforms, which do not share a common clock, using cross-correlation on a dedicated synchronisation movement; filling short data gaps caused by Bluetooth losses; filtering; and normalising the data.</p>
 
-### Building a usable dataset
+<p>A hybrid neural network was then trained in PyTorch, combining an LSTM, to capture the temporal dynamics of the push, with an MLP. Its hyperparameters were tuned by grid search, and its performance was assessed through leave-one-subject-out cross-validation. Errors remained below 9% of body weight on all three axes, comparable to values reported in the literature for walking and running, whereas the raw insole data overestimated the vertical force by around 50% in some phases.</p>
 
-**[to complete: describe the experimental campaigns — number of participants, scrummaging conditions (individual pushes, machine scrums, full-pack scrums, live scrums against an opposing pack), number of trials, total volume of data. Also mention the synchronisation of heterogeneous systems (insoles, force plates, motion capture if used), which is a genuine technical skill in itself.]**
+<h3 id="step-2-elite-players-and-a-systematic-comparison">Step 2: elite players and a systematic comparison</h3>
 
-A significant part of the work was not modelling but **data engineering**: synchronising devices that do not share a clock, segmenting scrum phases in continuous signals, handling missing sensors, and normalising across players whose body mass ranges over several tens of kilograms.
+<p>The second campaign involved 12 elite development front-row players from Stade Toulousain, following the same protocol with three pushes each.</p>
 
-### Model selection and architecture optimisation
+<p>To reconstruct the 3d ground reaction forces, four models were compared: an MLP, an LSTM, the hybrid LSTM-MLP from the proof of concept (all implemented in PyTorch), and a Random Forest (scikit-learn). Their hyperparameters were tuned by Bayesian optimisation with Optuna. Performance was assessed over the whole push, but also separately during the key phases of a scrum: the impact at engagement, foot repositioning, and sustained pushing.</p>
 
-I compared several families of regression models rather than committing to one a priori, and optimised the architecture and hyperparameters of the most promising ones.
+<p>Beyond the choice of algorithm, two training steategies were explored:</p>
 
-**[to complete: list the models you compared — e.g. linear regression as a baseline, random forests / gradient boosting, fully connected neural networks, temporal models (LSTM/CNN) — and say which one won and why. Mention the hyperparameter optimisation method you used (grid search, Bayesian optimisation...) and the input representation you settled on (raw pressure maps, engineered features, temporal windows...).]**
+<ul>
+  <li><strong>Dataset size</strong>: training on the elite players only, or extending the dataset by adding the data from 13 participants from the proof of concept.</li>
+  <li><strong>Personalisation</strong>: fine-tuning the last layer of a pre-trained model with two pushes from the player being assessed.</li>
+</ul>
 
-The baseline matters as much as the winner: showing that a simple model is not sufficient is what justifies the complexity of the final one.
+<p>Personalisation is rarely an option in machine learning, where models are usually expected to generalise to as many people as possible. But in elite sport, the population of interest is a small, stable squad that can be measured repeatedly, which makes player-specific models both feasible and relevant.</p>
 
-### Comparing training strategies
+<h3 id="results-two-operational-models">Results: two operational models</h3>
 
-The most interesting methodological question of the thesis was not *which algorithm*, but *how to train it* — because the intended use is to put the insoles on a **new player** who was never part of the training set.
+<p>The best performance was achieved by a simple MLP, personalised for each player, with errors of 5.6% of body weight on the antero-posterior axis, 1.8% on the lateral axis and 8.3% on the vertical axis on the globality of the trial. Compared with the proof of concept, the error on the antero-posterior axis dropped from 8.1% to 5.6%, a key improvement since this is the component that drives the pack forward. The simplest architecture outperformed the recurrent models: with limited data, more complexity does not necessarily mean better predictions.</p>
 
-I compared training strategies along that axis:
+<p>Two other findings stood out. Adding the non-rugby participants to the training data improved accuracy and reduced variability for nearly all models: on a small dataset, diversity matters. And while personalisation improved accuracy, the generic MLP trained on the extended dataset came close, with a 6.4% error on the antero-posterior axis, without requiring any specififc data from the player. Both results were confirmed on a player kept aside and never seen during development.</p>
 
-**[to complete: describe the strategies you compared, for example — subject-specific models vs. a single generic model; leave-one-subject-out cross-validation to measure true generalisation to unseen players; per-player fine-tuning from a generic model; normalisation by body mass; data augmentation. State clearly which strategy generalised best, and the cost/benefit for a club — a generic model works immediately on any player, a personalised model is more accurate but requires a lab session per player.]**
+<p>Two operational models were therefore delivered to Stade Toulousain: a personalised model, offering the highest accuracy for players already measured, and a generic model, directly applicable to new players.</p>
 
-This is a generalisation problem, not an accuracy problem, and it is the one that determines whether the method is deployable by a club or stays in a laboratory.
+<p>This work led to two peer-reviewed publications, in the <em>Journal of Biomechanics</em> (2025) and following the 3DAHM international symposium (2024), and was presented at several international conferences.</p>
 
-### Taking it to a real scrum
+<h2 id="back-to-the-coaches-question-who-pushes-the-most">Back to the coaches’ question: who pushes the most?</h2>
 
-**[to complete: describe the on-field application — real scrums with Stade Toulousain, what was measured, what the models produced, and any comparison against an independent reference (instrumented scrum machine total force vs. the sum of individual estimated forces is a particularly convincing validation if you did it).]**
+<p>With validated models in hand, it was time to return to the question that started the project: how is the effort distributed within a pack?</p>
 
-### Main results
+<p>The system was deployed during three experimental sessions in real training conditions at Stade Toulousain. To our knowledge, this was the first time that individual 3D pushing forces were measured simultaneously for all players of a pack during live scrums. Each session combined two types of scrums: against an opposing pack (live scrum), and against the club’s hydraulic scrum machine.</p>
 
-**[to complete: your headline numbers. For each force component (vertical, anteroposterior, mediolateral): RMSE or normalised RMSE, correlation with the reference, and how that compares to what already exists in the literature. Two or three figures, each with a one-line caption, will do more here than a page of text.]**
+<p>Moving from the lab to the field raised its own challenges. Recording up to eight pairs of insoles at once required three smartphones, one per row of the pack, with data from all rows synchronised afterwards using video recordings. Each player’s forces were then estimated with the appropriate model: the personalised model for players already measured in the lab, and the generic model for the others.</p>
 
-Published in the *Journal of Biomechanics* (2025) and presented at the 3DAHM international symposium (2024) — see the publication list below.
+<h3 id="three-levels-of-analysis">Three levels of analysis</h3>
 
-### What comes next
+<p>The resulting data can be explored from the scale of the whole pack down to each player’s feet:</p>
 
-**[to complete: work in progress or under review, and the perspectives you see — real-time feedback to the coaching staff, individual load monitoring across a season, injury-risk applications, transfer of the method to other contact phases or other sports, and how this connects to your current postdoctoral work at LAAS-CNRS.]**
+<ul>
+  <li><strong>The pack</strong>: the collective force along each axis, how it builds up through the “crouch, bind, set” engagement sequence, and how it differs between engagement and sustained pushing, or between live scrums and machine scrums.</li>
+  <li><strong>The individual</strong>: the contribution of each player to the pack’s forward force, and how this distribution shifts during the scrum. For example, the data show how much the front row carries the effort at different phases, or how the tight-head prop absorbs the impact at engagement.</li>
+  <li><strong>The feet</strong>: the distribution of force between the left and right foot, revealing pushing asymmetries, as well as the timing of each foot repositioning and its effect on the pack’s total force, for instance when the hooker lifts a foot to strike the ball.</li>
+</ul>
 
-## What this project demonstrates
+<h3 id="what-the-coaches-can-do-with-it">What the coaches can do with it</h3>
 
-<!-- This section is written for recruiters who skim. Keep it factual and short.
-     Delete any line that overstates what you actually did, and add the tools
-     and languages you really used. -->
+<p>These measurements open up several practical uses for the coaching and performance staff:</p>
 
-<!--
+<ul>
+  <li><strong>Comparing scrum conditions</strong>, such as live scrums versus machine scrums, to see how each player’s contribution changes.</li>
+  <li><strong>Testing pack combinations</strong>, by comparing the collective force produced by different line-ups rather than relying on subjective impressions alone.</li>
+  <li><strong>Comparing players</strong>, within the same pack or between players competing for the same position.</li>
+  <li><strong>Identifying pushing habits</strong>, such as strong foot asymmetries, which may reflect technique, positional constraints or past injuries, and could affect both performance and injury risk.</li>
+  <li><strong>Monitoring players and packs over time</strong>, across a season or after a return from injury.</li>
+</ul>
 
-- **Sensor instrumentation and measurement chain design** — selecting, calibrating and validating wearable sensors under extreme mechanical loads.
-- **Experimental design in an elite sport environment** — running protocols with professional athletes, where you get one attempt and no second session.
-- **Multi-system data acquisition and signal processing** — synchronising force platforms, instrumented insoles **[to complete: and motion capture, if applicable]**, segmenting and cleaning noisy real-world signals.
-- **Applied machine learning for regression** — model selection, hyperparameter optimisation, and cross-validation strategies designed for generalisation to unseen subjects rather than for optimistic test scores.
-- **Turning a research result into something usable** — designing for deployment outside the laboratory, with the constraints of the end user in mind.
-- **Communication** — peer-reviewed publications, international conferences, and translating technical results for a coaching staff.
+<p>To make the data directly usable, coaches were also provided with animations synchronising the video of each scrum with the individual forces of every player. Instead of tables of numbers, the staff can see who is pushing, how hard, and who is repositioning their feet, at every moment of the scrum.</p>
 
-**[to complete: add your technical stack — Python, scikit-learn, PyTorch/TensorFlow, pandas, etc. — and any other language or tool you worked with.]**
+<h2 id="whats-next">What’s next?</h2>
 
-## Publications from this thesis
+<p>This thesis lays the methodological foundations for measuring individual pushing forces in real scrums. The next steps would build on it in two directions.</p>
 
-- *[Machine learning techniques for estimating the individual three-dimensional ground reaction forces during rugby scrummaging](https://hal.science/hal-05330563/)*.
-**Zoé Pomarat**, Jean-Charles Passieux, John-Eric Dufour, Bruno Watier.
-**Journal of Biomechanics**, 2025.
+<p><strong>Building a scrum database.</strong> The three experimental sessions in training conditions provided a first descriptive picture, but drawing robust conclusions requires much more data. Collecting measurements regularly, for example throughout a full season, would make it possible to build a database of scrums and to move from descriptive observations to statistical analyses: tracking the evolution of a pack or a player over time, comparing line-ups, or following a player’s return from injury.</p>
 
-- *[Estimation of Ground Reaction Forces in Rugby Scrummaging Using Instrumented Insoles and Machine Learning](https://hal.science/hal-04925876/)*.
-**Zoé Pomarat**, Kahina Chalabi, Maxime Sabbah, John-Eric Dufour, Jean-Charles Passieux, Bruno Watier.
-**19th International Symposium on 3D Analysis of Human Movement (3DAHM)**, Montevideo, Uruguay, 2024.
+<p><strong>Improving the system through multi-sensor fusion.</strong> The models remain less accurate during highly dynamic moments such as the impact at engagement. One way forward would be to combine the insoles with other sensors: additional IMUs placed on the trunk or other body segments, pressure pads on the shoulders, or video, from which players’ posture and movements can be extracted. Feeding these complementary signals into the models could help capture fast events more reliably, and give a more complete picture of scrum performance: not only how much force each player produces, but how their posture and coordination with teammates shape it.</p>
+
+<p>Ultimately, the goal remains the same as at the start of this project: giving coaches objective tools to improve their pack’s performance while protecting their players.</p>
+
+<h2 id="publications-and-communications">Publications and communications</h2>
+
+<h3 id="peer-reviewed-articles">Peer-reviewed articles</h3>
+<ul>
+  <li>
+    <p><em><a href="https://hal.science/hal-05330563/">Machine learning techniques for estimating the individual three-dimensional ground reaction forces during rugby scrummaging</a></em>.
+<strong>Zoé Pomarat</strong>, Jean-Charles Passieux, John-Eric Dufour, Bruno Watier.
+<strong>Journal of Biomechanics</strong>, 2025.</p>
+  </li>
+  <li>
+    <p><em><a href="https://hal.science/hal-04925876/">Estimation of Ground Reaction Forces in Rugby Scrummaging Using Instrumented Insoles and Machine Learning</a></em>.
+<strong>Zoé Pomarat</strong>, Kahina Chalabi, Maxime Sabbah, John-Eric Dufour, Jean-Charles Passieux, Bruno Watier.
+<strong>19th International Symposium on 3D Analysis of Human Movement (3DAHM)</strong>, Montevideo, Uruguay, 2024.</p>
+  </li>
+</ul>
+
+<h3 id="international-conferences">International conferences</h3>
+<ul>
+  <li><em>Estimation of the horizontal pushing force during rugby scrummaging using instrumented insoles and deep learning</em>,
+<strong>Zoé Pomarat</strong>, Thierry Savio, Virgile Lacombe, John Eric Dufour, Jean Charles Passieux, Bruno Watier <strong>European College of Sport Science (ECSS) Congress</strong>, Rimini, 2025 (poster)</li>
+  <li><em>Repartition of the total pushing force among players during live and machine scrummaging in rugby</em>,
+<strong>Zoé Pomarat</strong>, John-Eric Dufour, Jean-Charles Passieux, Bruno Watier,
+<strong>European College of Sport Science (ECSS) Congress</strong>, Lausanne, 2026 (oral)</li>
+</ul>
 
 <!-- Once you upload the files to the files/ folder, they are served at /files/name.pdf :
 
@@ -419,14 +476,12 @@ Published in the *Journal of Biomechanics* (2025) and presented at the 3DAHM int
 - [Defence slides (PDF)](/files/phd-defence-slides.pdf)
 -->
 
-<!--
-## Acknowledgements
+<h2 id="acknowledgements">Acknowledgements</h2>
 
-This work was supervised by Prof. Bruno Watier, Prof. Jean-Charles Passieux and Asst. Prof. John-Eric Dufour, at the [Institut Clément Ader](https://institut-clement-ader.org/) and [LAAS-CNRS](https://www.laas.fr/en/), in collaboration with [Stade Toulousain](https://www.stadetoulousain.fr/).
+<p>This research was supported by Stade Toulousain Rugby and the French National Association for Research and Technology (ANRT) through a CIFRE fellowship.</p>
 
-**[to complete: funding body, and the club staff / players you want to thank.]**
+<p>This work was supervised by Prof. Bruno Watier, Prof. Jean-Charles Passieux and Asst. Prof. John-Eric Dufour, at the <a href="https://ica.cnrs.fr/">Institut Clément Ader</a> and <a href="https://www.laas.fr/en/">LAAS-CNRS</a>, in collaboration with <a href="https://www.stadetoulousain.fr/">Stade Toulousain</a>.</p>
 
--->
 
 
         
@@ -485,7 +540,7 @@ This work was supervised by Prof. Bruno Watier, Prof. Jean-Charles Passieux and 
 
 <div class="page__footer-copyright">
   &copy; 2026 Zoé Pomarat, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2026-07-25
+  Site last updated 2026-10-06
 </div>
 
       </footer>

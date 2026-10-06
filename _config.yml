@@ -25,9 +25,9 @@ author:
   avatar           : "profile.jpeg"
   name             : "Zoé Pomarat"
   pronouns         : # example: "she/her"  
-  bio              : "Postdoctoral researcher - LAAS-CNRS"
-  location         : "Toulouse, France"
-  employer         : "LAAS-CNRS"
+  bio              : "Research Engineer"
+  location         : #"Toulouse, France"
+  employer         : #"LAAS-CNRS"
   uri              : # URL
   email            : "zoe.pomarat@gmail.com" 
 

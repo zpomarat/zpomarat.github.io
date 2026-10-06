@@ -41,3 +41,32 @@
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+@media (min-width: 600px) {
+  .feature__item--left .archive__item {
+    display: flex;
+    gap: 0.5em;
+  }
+
+  .feature__item--left .archive__item-teaser {
+    flex: 0 0 220px;
+    width: 220px;
+    margin: 0;
+  }
+
+  .feature__item--left .archive__item-body {
+    flex: 1;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 925px) {
+  .page__content .phd-summary {
+    max-width: 85%;
+  }
+
+  .page__content > .sidebar__right {
+    width: 240px;
+  }
+}
